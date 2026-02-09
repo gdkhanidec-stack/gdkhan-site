@@ -3,49 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — G.D. Khan</title>
+  <meta name="description" content="G.D. Khan — Assistant Professor at Hiroshima University. Research in development policy and causal inference." />
+  <title>G.D. Khan</title>
+
   <style>
-    :root{--brand:#002d5d;--bg:#f7f9fb;--text:#1f2937;--muted:#4b5563;--card:#fff;--border:rgba(0,0,0,.08);--shadow:0 10px 30px rgba(0,0,0,.10);--radius:14px}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    header{background:linear-gradient(135deg,var(--brand),#001d3d);color:#fff;padding:34px 20px;text-align:center}
-    header h1{margin:0;font-size:clamp(1.6rem,2.6vw,2.1rem)}
-    nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px}
-    nav a{color:#fff;text-decoration:none;font-weight:600;opacity:.95}
-    nav a:hover{opacity:1;text-decoration:underline}
-    main{width:min(900px, calc(100% - 40px));margin:0 auto;padding:26px 0}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
-    .row{margin:10px 0;color:var(--muted)}
-    .row strong{color:var(--text)}
-    a{color:#0b5bd3}
-    footer{margin-top:30px;padding:18px 20px;background:var(--brand);color:#fff;text-align:center}
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fb;
+      color: #333;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #002d5d;
+      color: white;
+      padding: 50px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 22px;
+      border: 4px solid white;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 50px auto 0;
+      padding: 0 20px;
+    }
+
+    .statement {
+      font-size: 1.05em;
+      color: #444;
+      margin-bottom: 36px;
+    }
+
+    nav .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 22px;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.25s ease, transform 0.1s ease;
+    }
+
+    nav .buttons a:hover {
+      background-color: #0059b3;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 18px;
+      background-color: #002d5d;
+      color: white;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Contact</h1>
-    <nav aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
+    <h1>G.D. Khan</h1>
+    <p>Assistant Professor, Hiroshima University</p>
+    <img src="gdkhan photo.png" alt="Photo of G.D. Khan" class="profile-photo" />
   </header>
 
   <main>
-    <section class="card">
-      <div class="row"><strong>Email:</strong> <a href="mailto:gdkhan@hiroshima-u.ac.jp">gdkhan@hiroshima-u.ac.jp</a></div>
-      <div class="row"><strong>Affiliation:</strong> Hiroshima University</div>
-      <div class="row"><strong>Office:</strong> 1-5-1 Kagamiyama, Higashi-Hiroshima, Hiroshima-ken 739-8529, Japan</div>
-      <div class="row"><strong>Phone:</strong> +81-82-424-6950</div>
+    <p class="statement">
+      I teach graduate courses related to development policy, research methods, and causal inference.
+      My research focuses on evaluating the impacts of development interventions in developing countries,
+      with an emphasis on evidence-based policy design and implementation.
+    </p>
 
-      <!-- Optional (add if you want) -->
-      <!--
-      <div class="row"><strong>Google Scholar:</strong> <a href="YOUR_LINK" target="_blank" rel="noopener">Profile</a></div>
-      <div class="row"><strong>ORCID:</strong> <a href="YOUR_LINK" target="_blank" rel="noopener">0000-0000-0000-0000</a></div>
-      -->
-    </section>
+    <nav aria-label="Primary navigation">
+      <div class="buttons">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
   </main>
 
   <footer>
