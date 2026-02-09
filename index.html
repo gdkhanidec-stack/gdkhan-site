@@ -52,7 +52,7 @@
     .statement {
       font-size: 1.05em;
       color: #444;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
     }
 
     nav .buttons a {
@@ -70,6 +70,23 @@
     nav .buttons a:hover {
       background-color: #0059b3;
       transform: translateY(-1px);
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .logos img {
+      height: 56px;
+      transition: transform 0.25s ease;
+    }
+
+    .logos img:hover {
+      transform: scale(1.08);
     }
 
     footer {
@@ -104,6 +121,20 @@
         <a href="contact.html">Contact</a>
       </div>
     </nav>
+
+    <div class="logos" aria-label="Affiliations">
+      <a href="https://www.hiroshima-u.ac.jp/en" target="_blank" rel="noopener">
+        <img src="HU logo.png" alt="Hiroshima University Logo" />
+      </a>
+
+      <a href="https://idec.hiroshima-u.ac.jp" target="_blank" rel="noopener">
+        <img src="IDEC logo.png" alt="IDEC Logo" />
+      </a>
+
+      <a href="https://idec.hiroshima-u.ac.jp/research-center/cepeas/" target="_blank" rel="noopener">
+        <img src="CEPEAS_logo.png" alt="CEPEAS Logo" />
+      </a>
+    </div>
   </main>
 
   <footer>
